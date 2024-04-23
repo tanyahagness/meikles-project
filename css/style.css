@@ -2,6 +2,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@font-face {
+  font-family: "jost500Medium";
+  src: url("../fonts/Jost500Medium.otf");
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -30,6 +34,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
+  font-family: "jost500Medium";
   line-height: 1;
 }
 
@@ -52,8 +57,226 @@ table {
   border-spacing: 0;
 }
 
-* {
-  background: red;
+.banner {
+  background-image: url("../images/landing/banner.jpg");
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+}
+.banner .mobile-nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner .mobile-nav .hamburger {
+  border: 2px solid brown;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.banner .mobile-nav .hamburger .line {
+  height: 2px;
+  width: 50%;
+  background: brown;
+  display: flex;
+}
+.banner .pc-nav {
+  display: none;
+}
+
+#why {
+  margin-top: 3rem;
+  width: 100%;
+  padding: 3rem 0;
+}
+#why .container .row .left {
+  height: 100vh;
+}
+#why .container .row .left img {
+  width: 100%;
+}
+#why .container .row .left .cards-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: -1rem;
+}
+#why .container .row .left .cards-section .card {
+  width: 40%;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  background: rgb(164, 15, 30);
+  justify-content: center;
+  color: white;
+  border: 2px solid white;
+}
+#why .container .why-section {
+  display: flex;
+}
+#why .right {
+  display: flex;
+  flex-direction: column;
+  margin-top: -20rem;
+}
+#why .right .text {
+  font-weight: 500;
+}
+#why .right .text span {
+  color: rgb(164, 15, 30);
+}
+#why .right .button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 20px;
+  border-radius: 0;
+  border: 3px solid rgb(164, 15, 30);
+}
+#why .right .button a {
+  color: rgb(164, 15, 30);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.Our-project .container {
+  margin-top: -5%;
+}
+.Our-project .container .row .left {
+  height: 50vh;
+  background-color: rgb(164, 15, 30);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.Our-project .container .row .right .pictures {
+  color: white;
+  display: flex;
+  text-align: left;
+  justify-content: baseline;
+  width: 100%;
+}
+.Our-project .container .row .right .pictures .image1 {
+  background-image: url("../images/landing/project 1.jpg");
+  height: 25vh;
+  width: 25vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid maroon;
+}
+.Our-project .container .row .right .pictures .image2 {
+  background-image: url("../images/landing/project 2.jpg");
+  height: 25vh;
+  width: 25vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid maroon;
+}
+.Our-project .container .row .right .image3 {
+  background-image: url("../images/landing/project 3.jpg");
+  height: 25vh;
+  width: 25vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Our-project .container .row .right .image4 {
+  background-image: url("../images/landing/project 4.jpg");
+  height: 25vh;
+  width: 25vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Our-project .container .row .right .image5 {
+  background-image: url("../images/landing/project 5.jpg");
+  height: 25vh;
+  width: 25vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Our-project .container .row .right .image6 {
+  background-image: url("../images/landing/project 6.jpg");
+  height: 25vh;
+  width: 25vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.donations {
+  margin-top: 5%;
+}
+.donations .text {
+  height: 60vh;
+  background-image: url("../images/landing/donate.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.donations .text .overlay {
+  background: rgba(80, 72, 72, 0.596);
+  height: 100%;
+}
+.donations .text .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.donations .text .buttons button {
+  background-color: rgb(164, 15, 30);
+  color: white;
+  border: none;
+  padding: bottom 20px;
+}
+.donations .text .buttons input {
+  background: transparent;
+  border: 2px solid white;
+  width: 70%;
+}
+
+.lorem .container {
+  margin-top: 5%;
+  padding: 3rem 0;
+  border: 3px solid rgb(164, 15, 30);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer {
+  background-color: rgb(164, 15, 30);
+  margin-top: 5%;
+  color: white;
+  padding: 3rem 0;
+}
+.footer .container .row {
+  display: flex;
+  flex-direction: row;
+}
+.footer .container .row .circle {
+  display: flex;
+  font-weight: 600;
+  gap: 1rem;
+}
+.footer .container .row .circle .dots {
+  color: white;
+  height: 15px;
+  width: 15px;
+  background-color: black;
+  border: 3px solid white;
+  border-radius: 50%;
+  gap: 10px;
 }
 
 /*
@@ -71,8 +294,114 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 */
 /* Small devices (landscape phones, 576px and up) */
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  #why {
+    margin-top: 3rem;
+    width: 100%;
+  }
+  #why .container .row .left img {
+    width: 100%;
+  }
+  #why .container .row .right {
+    margin-top: 0;
+  }
+}
 /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .banner {
+    position: relative;
+    margin: 0;
+    background-image: url("../images/landing/banner.jpg");
+    background-size: cover;
+  }
+  .banner .mobile-nav {
+    display: none;
+  }
+  .banner .nav-container {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+  }
+  .banner .nav-container .pc-nav {
+    display: block;
+    display: flex;
+    background: white;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 80%;
+  }
+  .banner .nav-container .pc-nav .nav-icons {
+    width: 5rem;
+    height: 6rem;
+    background: brown;
+  }
+  .banner .nav-container .pc-nav .center {
+    width: 100%;
+  }
+  .banner .nav-container .pc-nav .center ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .banner .nav-container .pc-nav .center ul li {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .banner .nav-container .pc-nav .center ul image {
+    display: flex;
+  }
+  .cardscontainer .image {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+  }
+}
+.donate .image {
+  background: cover;
+  width: 80%;
+}
+.donate #why {
+  margin-top: 3rem;
+  width: 100%;
+}
+.donate #why .container .row .left img {
+  width: 100%;
+  height: 100vh;
+}
+.donate #why .container .row .left .cards-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: -2rem;
+}
+.donate #why .container .row .left .cards-section .card {
+  width: 8rem;
+  height: 8rem;
+}
+
 /* Extra large devices (large desktops, 1200px and up) */
+#why {
+  margin-top: 3rem;
+  width: 100%;
+}
+#why .container .row .left img {
+  width: 100%;
+}
+#why .container .row .left .cards-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: -2rem;
+}
+#why .container .row .left .cards-section .card {
+  width: 12rem;
+  height: 8rem;
+}
+
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Custom media queries
