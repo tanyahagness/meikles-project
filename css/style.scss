@@ -109,8 +109,8 @@ table {
                     margin-top: -1rem;
 
                     .card{
-                        width: 40%;
-                        height: 4vh;
+                        width: 60%;
+                        height: 8vh;
                         display: flex;
                         align-items: center;
                         background: rgb(164, 15, 30);
@@ -242,6 +242,7 @@ table {
     .donations{
         margin-top: 5%;
         .text{
+        
         height: 60vh;
         background-image: url("../images/landing/donate.jpg");
         background-position: center;
@@ -251,6 +252,7 @@ table {
         .overlay{
             background: rgba(80, 72, 72, 0.596);
             height: 100%;
+            padding: 5rem;
         
     }
     .buttons{
@@ -262,12 +264,17 @@ table {
             color: white;
             border: none;
             padding: bottom 20px;
+            width: 20rem;
+            height: 3rem;
+            
 
         }
         input{
             background: transparent;
             border:2px solid white;
-            width: 70%;
+            width: 8rem;
+            height: 3rem;
+
         }
 
     }
@@ -304,15 +311,27 @@ table {
             .circle{
                 display: flex;
                 font-weight: 600;
-                gap: 1rem;
-                .dots{
-                    color: white;
-                    height: 15px;
-                    width: 15px;
-                    background-color: black;
-                    border: 3px solid white;
-                    border-radius: 50%;
-                    gap: 10px;
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                .content{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 30px;
+                    gap: 5px;
+                    justify-content: center;
+                    
+
+                    .dots{
+                        margin-top: -10px;
+                        color: white;
+                        height: 15px;
+                        width: 15px;
+                        background-color: black;
+                        border: 3px solid white;
+                        border-radius: 50%;
+                        padding: 0;
+                    }
                 }
             }
         }

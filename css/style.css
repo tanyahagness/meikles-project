@@ -107,8 +107,8 @@ table {
   margin-top: -1rem;
 }
 #why .container .row .left .cards-section .card {
-  width: 40%;
-  height: 4vh;
+  width: 60%;
+  height: 8vh;
   display: flex;
   align-items: center;
   background: rgb(164, 15, 30);
@@ -225,6 +225,7 @@ table {
 .donations .text .overlay {
   background: rgba(80, 72, 72, 0.596);
   height: 100%;
+  padding: 5rem;
 }
 .donations .text .buttons {
   display: flex;
@@ -236,11 +237,14 @@ table {
   color: white;
   border: none;
   padding: bottom 20px;
+  width: 20rem;
+  height: 3rem;
 }
 .donations .text .buttons input {
   background: transparent;
   border: 2px solid white;
-  width: 70%;
+  width: 8rem;
+  height: 3rem;
 }
 
 .lorem .container {
@@ -267,16 +271,26 @@ table {
 .footer .container .row .circle {
   display: flex;
   font-weight: 600;
-  gap: 1rem;
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
-.footer .container .row .circle .dots {
+.footer .container .row .circle .content {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  gap: 5px;
+  justify-content: center;
+}
+.footer .container .row .circle .content .dots {
+  margin-top: -10px;
   color: white;
   height: 15px;
   width: 15px;
   background-color: black;
   border: 3px solid white;
   border-radius: 50%;
-  gap: 10px;
+  padding: 0;
 }
 
 /*
