@@ -8,15 +8,51 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 </head>
 <body>
+   
     <section class="banner">
         <nav class="mobile-nav">
-        <h1>meikels</h1>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Meikeles</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images\landing\logo.jpg" alt=""></h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Donations</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Projects&News</a></li>
+                            <li><a class="dropdown-item" href="#">Events</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">contact</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+              
         </nav>
         <div class="nav-container">
             <nav class="pc-nav">
@@ -83,7 +119,7 @@
 
     <section class="Our-project">
         <div class="container">
-            <div class="row">
+            <div class="row g-0">
            
             <div class="col-md-5 left">
                 <h2>Some of our projects </h2>
@@ -98,11 +134,13 @@
             play to seek
     </p>
             </div>
+
+            
             <div class="col-md-7 right">
                 <div class="pictures">
                 <div class="image1">
                     <p>Education</p>
-                </div>
+       </div>
 
                     <div class="image2">
                         <p>Animal Welfare</p>
@@ -130,7 +168,7 @@
                     </div>
 
                 </div>   
-                </div>
+                
         </div>
             
     </section>
@@ -138,7 +176,7 @@
     <section class="donations">
         <div class="text">
             <div class="overlay">
-            <h1>Feel free to help and make donations <br> for the need</h1>
+            <h2>Feel free to help and make donations <br> for the need</h2>
 
             <div class="buttons">
                 <form action="email" method="post">
@@ -216,6 +254,8 @@
 
     </section>
     
+    <script src="script.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
     

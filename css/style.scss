@@ -54,6 +54,7 @@ table {
 	border-spacing: 0;
 }
 
+
 //phone styles
 .banner{background-image: url("../images/landing/banner.jpg");
     width: 100%;
@@ -82,6 +83,7 @@ table {
     
     
                }
+              
     }
 }
 
@@ -130,7 +132,7 @@ table {
         display: flex;
         flex-direction: column;
         // gap: 1rem ;
-        margin-top: -20rem;
+        margin-top: -5rem;
         .text{
             font-weight: 500;
             span{
@@ -154,84 +156,102 @@ table {
 
 }
 .Our-project{
- 
-
-
     .container{
         margin-top: -5%;
+        width: 100%;
         .row{
             .left {
-                height: 50vh;
-                background-color: rgb(164,15,30);
-                color: white;
+                padding: 0  1rem;
                 display: flex;
                 flex-direction: column;
+                height: 70vh;
+                background-color: rgb(164, 15, 30);
         }
         .right{
             .pictures{
+
              color: white;
              display: flex;
-             text-align: left;
              justify-content: baseline;
              width: 100%;
+
+             
              
             
              .image1{
-             
-                 background-image: url("../images/landing/project\ 1.jpg");
-                 height: 25vh;
-                 width: 25vh;
-                 background-size: cover;
-                 background-position: center;
-                 background-repeat: no-repeat;
-                 border: 1px solid maroon;
-             }
-             .image2{
-             
-                background-image: url("../images/landing/project\ 2.jpg");
-                height: 25vh;
-                width: 25vh;
+                background-image: url("../images/landing/project\ 1.jpg");
+                width: 35vh;
+                height: 35vh;
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
-                border: 1px solid maroon;
+                border: 2px solid maroon; 
+                display: flex;
+                align-items: end;
+                
+             }
+            
+             
+             .image2{
+             
+                background-image: url("../images/landing/project\ 2.jpg");
+                height: 35vh;
+                width: 35vh;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border: 2px solid maroon;
+                display: flex;
+                align-items: end;
             }
             
              }
              .image3{
                  
                  background-image: url("../images/landing/project\ 3.jpg");
-                 height: 25vh;
-                 width: 25vh;
+                 height: 35vh;
+                 width: 35vh;
                  background-size: cover;
                  background-position: center;
                  background-repeat: no-repeat;
+                 border: 2px solid maroon;
+                 display: flex;
+                align-items: end;
              }
              .image4{
              
                  background-image: url("../images/landing/project\ 4.jpg");
-                 height: 25vh;
-                 width: 25vh;
+                 height: 35vh;
+                 width: 35vh;
                  background-size: cover;
                  background-position: center;
                  background-repeat: no-repeat;
+                 border: 2px solid maroon;
+                 display: flex;
+                align-items: end;
              }
              .image5{
                  background-image: url("../images/landing/project\ 5.jpg");
-                 height: 25vh;
-                 width: 25vh;
+                 height: 35vh;
+                 width: 35vh;
                  background-size: cover;
                  background-position: center;
                  background-repeat: no-repeat;
+                 border: 2px solid maroon;
+                 display: flex;
+                align-items: end;
              }
              .image6{
                  
                  background-image: url("../images/landing/project\ 6.jpg");
-                 height: 25vh;
-                 width: 25vh;
+                 height: 35vh;
+                 width: 35vh;
                  background-size: cover;
                  background-position: center;
                  background-repeat: no-repeat;
+                 border: 2px solid maroon;
+                 display: flex;
+                align-items: end;
              }
             }
          }
@@ -252,29 +272,37 @@ table {
         .overlay{
             background: rgba(80, 72, 72, 0.596);
             height: 100%;
-            padding: 5rem;
+            padding: 5rem 1rem;
         
     }
     .buttons{
         display: flex;
         flex-direction: row;
         gap: 30px;
+        width: 100%;
         button{
             background-color: rgb(164, 15, 30);
             color: white;
             border: none;
             padding: bottom 20px;
-            width: 20rem;
-            height: 3rem;
+            height: 7vh;
+            padding: 0 1 rem;
             
 
         }
-        input{
-            background: transparent;
-            border:2px solid white;
-            width: 8rem;
-            height: 3rem;
-
+        form{
+            width: 38%;
+            input{
+                background: transparent;
+                border:2px solid white;
+                height: 7vh;
+                width: 100%;
+    
+            }
+            ::placeholder{
+                font-weight: 500;
+                color: white;
+            }
         }
 
     }
@@ -422,12 +450,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
             display: block;
             display: flex;
             background: white;
-            height: fit-content;
+            height: 3rem;
             width: 80%;
 
             .nav-icons{
                 width: 5rem;
-                height: 6rem;
+                height: 3rem;
                 background: brown;
             }
 
@@ -442,9 +470,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
                         font-weight: 500;
                         font-size: 20px;
                     }
-                    image{
+                    img{
                         display: flex;
-                
+                        height: 2rem;
                     }
                 }
             }
@@ -507,13 +535,14 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     
 }
 #why{
-    margin-top: 3rem;
+    // margin-top: 3rem;
     width: 100%;
     .container{
         .row{
             .left{
                 img{
                     width: 100%;
+                    height: 69vh;
                 }
                 .cards-section{
     
@@ -526,6 +555,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
                         width: 12rem;
                         height: 8rem
                     }
+                }
+            }
+            .right{
+                p{
+                    font-size: 15px;
                 }
             }
         }
